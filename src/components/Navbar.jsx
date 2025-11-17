@@ -5,61 +5,61 @@ function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className="bg-gradient-to-r from-black via-[#001F2A] to-[#004359] shadow-lg relative">
-      <div className="max-w-7xl mx-auto px-4">
-        <div className="flex justify-between items-center h-16">
+    <nav className="bg-linear-to-r from-black via-[#001F2A] to-[#004359] shadow-cyan-50 fixed w-full z-50 border-b border-gray-700">
+      <div className="px-6 mx-auto max-w-7xl">
+        <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <div className="flex items-center">
            <a href='App.jsx'>
-            <span className="text-2xl font-serif font-bold text-white">
+            <span className="font-serif text-2xl font-bold text-white">
               ParfumÉlégant
             </span>
             </a>
           </div>
 
           {/* Desktop Menu */}
-          <div className="hidden md:flex items-center space-x-8">
-            <a href="#" className="text-gray-200 hover:text-white font-medium transition duration-300 hover:scale-105">
+          <div className="items-center hidden space-x-8 md:flex">
+            <a href="#" className="font-medium text-gray-200 transition duration-300 hover:text-white hover:scale-105">
               Fragrances
             </a>
-            <a href="#" className="text-gray-200 hover:text-white font-medium transition duration-300 hover:scale-105">
+            <a href="#" className="font-medium text-gray-200 transition duration-300 hover:text-white hover:scale-105">
               For Men
             </a>
-            <a href="#" className="text-gray-200 hover:text-white font-medium transition duration-300 hover:scale-105">
+            <a href="#" className="font-medium text-gray-200 transition duration-300 hover:text-white hover:scale-105">
               For Women
             </a>
-            <a href="#" className="text-gray-200 hover:text-white font-medium transition duration-300 hover:scale-105">
+            <a href="#" className="font-medium text-gray-200 transition duration-300 hover:text-white hover:scale-105">
               Collections
             </a>
-            <a href="#" className="text-gray-200 hover:text-white font-medium transition duration-300 hover:scale-105">
+            <a href="#" className="font-medium text-gray-200 transition duration-300 hover:text-white hover:scale-105">
               About
             </a>
           </div>
 
           {/* Right side icons */}
-          <div className="hidden md:flex items-center space-x-6">
-            <button className="text-gray-200 hover:text-white transition duration-300 hover:scale-110">
+          <div className="items-center hidden space-x-6 md:flex">
+            <button className="text-gray-200 transition duration-300 hover:text-white hover:scale-110">
               <Search size={20} />
             </button>
-            <button className="text-gray-200 hover:text-white transition duration-300 hover:scale-110">
+            <button className="text-gray-200 transition duration-300 hover:text-white hover:scale-110">
               <User size={20} />
             </button>
-            <button className="text-gray-200 hover:text-white transition duration-300 hover:scale-110 relative">
+            <button className="relative text-gray-200 transition duration-300 hover:text-white hover:scale-110">
               <ShoppingBag size={20} />
-              {/* <span className="absolute -top-2 -right-2 bg-rose-500 text-white text-xs rounded-full h-5 w-5 flex items-center justify-center">
+              {/* <span className="absolute flex items-center justify-center w-5 h-5 text-xs text-white rounded-full -top-2 -right-2 bg-rose-500">
                 3
               </span> */}
             </button>
           </div>
 
           {/* Mobile menu button */}
-          <div className="md:hidden flex items-center space-x-4">
+          <div className="flex items-center space-x-4 md:hidden">
             <button className="text-gray-200">
               <ShoppingBag size={20} />
             </button>
             <button
               onClick={() => setIsOpen(!isOpen)}
-              className="text-gray-200 focus:outline-none hover:text-white transition duration-300"
+              className="text-gray-200 transition duration-300 focus:outline-none hover:text-white"
             >
               {isOpen ? <X size={24} /> : <Menu size={24} />}
             </button>
@@ -70,26 +70,26 @@ function Navbar() {
         {isOpen && (
           <div className="md:hidden absolute top-16 left-0 right-0 bg-gradient-to-b from-[#001F2A] to-[#004359] shadow-lg z-50 border-t border-gray-700">
             <div className="px-4 pt-2 pb-4 space-y-3">
-              <a href="#" className="block py-3 text-gray-200 hover:text-white font-medium border-b border-gray-700 hover:pl-2 transition-all duration-300">
+              <a href="#" className="block py-3 font-medium text-gray-200 transition-all duration-300 border-b border-gray-700 hover:text-white hover:pl-2">
                 Fragrances
               </a>
-              <a href="#" className="block py-3 text-gray-200 hover:text-white font-medium border-b border-gray-700 hover:pl-2 transition-all duration-300">
+              <a href="#" className="block py-3 font-medium text-gray-200 transition-all duration-300 border-b border-gray-700 hover:text-white hover:pl-2">
                 For Men
               </a>
-              <a href="#" className="block py-3 text-gray-200 hover:text-white font-medium border-b border-gray-700 hover:pl-2 transition-all duration-300">
+              <a href="#" className="block py-3 font-medium text-gray-200 transition-all duration-300 border-b border-gray-700 hover:text-white hover:pl-2">
                 For Women
               </a>
-              <a href="#" className="block py-3 text-gray-200 hover:text-white font-medium border-b border-gray-700 hover:pl-2 transition-all duration-300">
+              <a href="#" className="block py-3 font-medium text-gray-200 transition-all duration-300 border-b border-gray-700 hover:text-white hover:pl-2">
                 Collections
               </a>
-              <a href="#" className="block py-3 text-gray-200 hover:text-white font-medium border-b border-gray-700 hover:pl-2 transition-all duration-300">
+              <a href="#" className="block py-3 font-medium text-gray-200 transition-all duration-300 border-b border-gray-700 hover:text-white hover:pl-2">
                 About
               </a>
-              <div className="flex space-x-6 pt-4 pb-2 justify-center">
-                <button className="text-gray-200 hover:text-white hover:scale-110 transition duration-300">
+              <div className="flex justify-center pt-4 pb-2 space-x-6">
+                <button className="text-gray-200 transition duration-300 hover:text-white hover:scale-110">
                   <Search size={22} />
                 </button>
-                <button className="text-gray-200 hover:text-white hover:scale-110 transition duration-300">
+                <button className="text-gray-200 transition duration-300 hover:text-white hover:scale-110">
                   <User size={22} />
                 </button>
               </div>

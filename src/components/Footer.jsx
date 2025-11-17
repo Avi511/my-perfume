@@ -4,11 +4,9 @@ import { Facebook, Twitter, Instagram, Youtube, Mail, Phone, MapPin, Heart } fro
 function Footer() {
   return (
     <footer className="bg-gradient-to-r from-black via-[#001F2A] to-[#004359] text-white">
-      {/* Main Footer Content */}
       <div className="max-w-7xl mx-auto px-4 py-12">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           
-          {/* Brand Column */}
           <div className="lg:col-span-1">
             <h3 className="text-2xl font-serif font-bold mb-4">ParfumÉlégant</h3>
             <p className="text-gray-300 mb-6 leading-relaxed">
@@ -30,7 +28,6 @@ function Footer() {
             </div>
           </div>
 
-          {/* Quick Links */}
           <div>
             <h4 className="text-lg font-semibold mb-6">Quick Links</h4>
             <ul className="space-y-3">
@@ -62,7 +59,6 @@ function Footer() {
             </ul>
           </div>
 
-          {/* Customer Service */}
           <div>
             <h4 className="text-lg font-semibold mb-6">Customer Service</h4>
             <ul className="space-y-3">
@@ -93,8 +89,6 @@ function Footer() {
               </li>
             </ul>
           </div>
-
-          {/* Contact Info */}
           <div>
             <h4 className="text-lg font-semibold mb-6">Contact Us</h4>
             <div className="space-y-4">
@@ -114,8 +108,6 @@ function Footer() {
                 <span className="text-gray-300">contact@parfumelegant.com</span>
               </div>
             </div>
-
-            {/* Newsletter Signup */}
             <div className="mt-6">
               <h5 className="font-semibold mb-3">Newsletter</h5>
               <div className="flex">
@@ -132,8 +124,6 @@ function Footer() {
           </div>
         </div>
       </div>
-
-      {/* Bottom Footer */}
       <div className="border-t border-gray-700">
         <div className="max-w-7xl mx-auto px-4 py-6">
           <div className="flex flex-col md:flex-row justify-between items-center">
