@@ -4,13 +4,15 @@ import Navbar from "./components/navbar"
 import Bar from "./components/Bar"
 import React from "react"
 import './index.css'
+import ProductCard from "./components/ProductCard"
 
 function App() {
   return (
     <>
     <Navbar />
     <HeroSection />
-     <Bar/>
+    <Bar/>
+    <ProductCard />
     <Footer />
     </>
   )
